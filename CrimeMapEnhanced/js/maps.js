@@ -46,11 +46,19 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 function putRandomMarkers(markers) {
+    var iconBase = 'img/';
     for (var i = 0; i < markers.length; i++) {
+  	type = 'motorcycle';
+     if(i%2==0)
+      type = 'car';
+     if(i%3==0)
+      type = 'phones';
+     
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(markers[i].x, markers[i].y),
             map: map,
-            title: "Mugging Incident"
+            icon: iconBase + type +'.png',
+            title: type + " Incident"
         });
     }
 }
