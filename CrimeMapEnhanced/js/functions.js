@@ -4,12 +4,12 @@ $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the boot
 
 jQuery(document).ready(function () {
 
-    jQuery('.crime-request-legend').click(function () {
-        if (jQuery('#crime-request-region').is(':visible'))
-            jQuery('#crime-request-region').hide(1500);
-        else
-            jQuery('#crime-request-region').show(1500);
-    });
+    //jQuery('.crime-request-legend').click(function () {
+    //    if (jQuery('#crime-request-region').is(':visible'))
+    //        jQuery('#crime-request-region').hide(1500);
+    //    else
+    //        jQuery('#crime-request-region').show(1500);
+    //});
 
 
 
